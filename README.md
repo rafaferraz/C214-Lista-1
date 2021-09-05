@@ -1,2 +1,1 @@
-# Inatel-C214
-Repositório para a matéria de Engenharia de Software
+# C214 - Lista 1
