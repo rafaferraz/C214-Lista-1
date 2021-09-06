@@ -46,7 +46,7 @@ public class TestJogos {
     @Test
     public void testJogosWii(){
         List<Jogo> jogosWii = JogoService.getByPlatform(jogos, Platform.Wii);
-        Assert.assertEquals(16, jogosWii.size());
+        Assert.assertEquals(15, jogosWii.size());
     }
 
     @Test
@@ -58,6 +58,6 @@ public class TestJogos {
     @Test
     public void testJogosShooter(){
         List<Jogo> jogosShooter = JogoService.getByGenre(jogos, Genre.Shooter);
-        Assert.assertEquals(3, jogosShooter.size());
+        Assert.assertEquals(22, jogosShooter.size());
     }
 }
