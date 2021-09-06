@@ -29,6 +29,7 @@ public class Csv {
             Reader reader = Files.newBufferedReader(csvFilePath);
             CsvToBean<Jogo> csvToBean = new CsvToBeanBuilder(reader)
                     .withType(Jogo.class).withIgnoreLeadingWhiteSpace(true).build();
+            jogos = csvToBean.parse();
         } catch (IOException ex) {
             Logger.getLogger(Csv.class.getName()).log(Level.SEVERE, null, ex);
         }
